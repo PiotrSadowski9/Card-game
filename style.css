@@ -15,7 +15,6 @@ body {
   padding: 10px;
   width: 100%;
   text-align: center;
-  font-variant: small-caps;
   box-sizing: border-box;
   position: relative;
   background-color: #ffffff;
@@ -24,11 +23,17 @@ body {
 }
 .scoreboardItem {
   display: inline-block;
-  width: 130px;
+  width: 150px;
   text-align: center;
   margin: 2px;
   vertical-align: top;
   padding: 10px;
+}
+.labels {
+  padding-top: 5px;
+}
+.data {
+  font-size: 2em;
 }
 section {
   display: grid;
