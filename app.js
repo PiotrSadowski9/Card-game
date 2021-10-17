@@ -1,9 +1,16 @@
 const section = document.querySelector("section");
-const playerLivesCount = document.querySelector("span");
+const playerLivesCount = document.querySelector('.playerLivesCount');
+const winStreakCount = document.querySelector('.winStreakCount');
+const bestWinStreakCount = document.querySelector('.bestWinStreakCount')
 let playerLives= 10;
+let winStreak = 0;
+let bestWinStreak = 0;
+
 
 //Link text to content
 playerLivesCount.textContent = playerLives;
+winStreakCount.textContent = winStreak;
+bestWinStreakCount.textContent = bestWinStreak;
 
 //Generate the data
 
@@ -83,12 +90,21 @@ const checkCards = (e)=> {
             playerLivesCount.textContent = playerLives;
             if (playerLives === 0) {
                 restart("Try again");
+                winStreak = 0;
+                winStreakCount.textContent = winStreak;
             }
         }
     }
     // Check if game won
     if (toggleCard.length === 16) {
         restart('You won')
+        winStreak++;
+        winStreakCount.textContent = winStreak;
+        if (bestWinStreak < winStreak) {
+            bestWinStreak = winStreak;
+            bestWinStreakCount.textContent = bestWinStreak;
+        }
+
     }
 };
 

@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h1>Lives: <span class="playerLivesCount"></span></h1>
-    <section></section>
+    <div class="content">
+        <section></section>
+        <div class="scoreboard">
+            <div class="scoreboardItem"><span class="playerLivesCount"></span> <p>Lives</p></div>
+            <div class="scoreboardItem"><span class="winStreakCount"></span><p>Current Win Streak</p></div>
+            <div class="scoreboardItem"><span class="bestWinStreakCount"></span><p>Best Win Streak</p></div>
+        </div>
+    </div>
+    
+    
     <script src="./app.js"></script>  
 </body>
 </html>

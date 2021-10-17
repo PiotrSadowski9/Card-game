@@ -10,6 +10,26 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.scoreboard {
+  margin: 40px auto;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-variant: small-caps;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%),
+    0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+.scoreboardItem {
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  margin: 2px;
+  vertical-align: top;
+  padding: 10px;
+}
 section {
   display: grid;
   grid-template-columns: repeat(4, 8rem);
